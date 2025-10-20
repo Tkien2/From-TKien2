@@ -9,7 +9,9 @@ body{
     min-height: 100vh;
     background: linear-gradient(rgb(26, 29, 48), rgb(14, 12, 28));
     background-attachment: fixed;
-    overflow-x: hidden;
+}
+html, body{
+    overflow-x: hidden !important;
 }
 button{
     cursor: pointer;
@@ -373,6 +375,9 @@ img{
 }
 /* ===Mobile=== */
 @media screen and (max-width: 400px) {
+    body{
+        overflow-x: hidden !important;
+    }
     .heading{
         font-size: 32px;
     }
