@@ -276,6 +276,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 50px;
     min-height: 70vh;
     transition-duration: 0.4s;
 }
