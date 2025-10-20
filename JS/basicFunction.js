@@ -91,3 +91,8 @@ export function getTimeFrom2Dates(unixTime1, unixTime2){
     let daysPassed = (monthsPassed - Math.floor(monthsPassed))*30
     return [Math.floor(yearsPassed), Math.floor(monthsPassed), Math.floor(daysPassed)]
 }
+document.addEventListener("scroll", ()=>{
+    if(window.scrollX > 0){
+        window.scrollTo(0, window.scrollY)
+    }
+})

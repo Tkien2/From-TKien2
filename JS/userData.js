@@ -39,5 +39,18 @@ export const userList =[
             "Có thể sau này tụi mình không còn gặp nhau nữa, tương lai mà, làm gì có ai đoán được nhể? Cũng vì thời gian có hạn nên khoảng thời gian đơn giản này quý lắm.<br>Nhân ngày 20/10 và nhân lúc bà còn học chung với tui, tui chúc bà có một tuần thật vui vẻ, không chỉ riêng gì tuần này mà còn cả khoảng thời gian sau này nữa. Tui không biết sau này bà sẽ ra sao, như thế nào nhưng chỉ cần là luôn vui vẻ là được rồi. Quan trọng hơn cả là bây giờ thì Kin chúc Hân học tốt hơn năm ngoái, đạt điểm cao đúng như kỳ vọng của mình. Có bao nhiêu điều Kin muốn nói thì Kin cũng đã nói rồi đó :><br><br>Chúc Hân có một tuần thật vui vẻ!<br><br> -TKien2",
             PS
         ],
+    },
+    {
+        name: "Lam",
+        pass: "MTQ2OTM=",
+        birthdayUnixInSec: 1233766800,
+        timeFirstMet: 1661965200,
+        specTime: 1718730000,
+        specDecs: "2 đứa chính thức không còn học chung trường nữa. Nhưng điều đó chẳng là gì vì tụi mình vẫn còn liên lạc với nhau.",
+        messages: [
+            "Tính ra bà là đứa được tui thiết kế web cho nhiều nhất luôn á. 3 dịp thì nhận được cả 3 web khác nhau, quá đã luôn ha.",
+            "Ờm phải nói sao nhỉ? Nói thật là Kin cũng không ngờ hai đứa lại chơi với nhau lâu đến như vậy, vì đó giờ đa số được 1 năm rồi quên luôn à. Thì nay là 20/10, mặc dù giờ giấc hơi muộn nhưng mà Kin chúc Lam có một tuần thật vui vẻ, không chỉ riêng tuần này mà còn tháng sau, và cả sau này nữa. Kin không biết Kin có thể làm bạn với Lam được bao lâu, nhưng sau này Lam chỉ cần luôn vui vẻ là tốt lắm rồi. Kkk, tương lai mà, khó đoán lắm.<br>Cuối cùng, Kin chúc Lam học thật giỏi, điểm cao để sau này còn theo đuổi ngành mình thích nữa, chơi được nhưng học được mới hay chứ nhể.<br><br>Kin chúc Lam có những năm tháng thật vui vẻ!<br><br> -TKien2",
+            PS
+        ],
     }
 ]
