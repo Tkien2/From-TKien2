@@ -25,7 +25,7 @@ export async function showNotification(type, message, durationInSec){
     return
 }
 export function isElementReached(element){
-    const pageY = window.scrollY + Math.round(window.innerHeight*0.6)
+    const pageY = window.scrollY + Math.round(window.innerHeight*0.45)
     const elementY = element.offsetTop
     return pageY>=elementY
 }
