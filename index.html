@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bạn là ai?</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/password.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <!-- GG Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- GG Icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios,arrow_forward_ios,check,lightbulb_2,warning" />
+</head>
+<body>
+    <div class="background" id="background">
+        <div class="moon"></div>
+    </div>
+    <div class="notification" id="notification">
+        <div class="notification__icon">
+            <span class="material-symbols-rounded icon" id="notificationIcon">
+                warning
+            </span>
+        </div>
+        <div class="notification__message" id="notificationMessage"></div>
+    </div>
+    <div class="passwordArea" id="passwordArea">
+        <div class="passwordBox">
+            <input placeholder="Mật khẩu" class="passwordBox__child passwordInput" autocomplete="off" id="password">
+            <button class="passwordBox__child" id="checkPassword">Kiểm tra</button>
+        </div>
+    </div>
+    <div class="cloud--big hide" id="timelineCloud">
+        <div class="cloud--big__ball1 cloud--big__ball"></div>
+        <div class="cloud--big__ball2 cloud--big__ball"></div>
+        <div class="cloud--big__ball3 cloud--big__ball"></div>
+        <div class="cloud--big__ball4 cloud--big__ball"></div>
+        <div class="cloud--big__ball5 cloud--big__ball"></div>
+        <div class="cloud--big__ball6 cloud--big__ball"></div>
+        <div class="cloud--big__ball7 cloud--big__ball"></div>
+        <div class="cloud--big__ball8 cloud--big__ball"></div>
+        <div class="cloud--big__ball9 cloud--big__ball"></div>
+        <div class="cloud--big__ball10 cloud--big__ball"></div>
+    </div>
+    <div class="headerWrapper hide" id="timelineHeadingWrapper">
+        <div class="timelineHeading heading" id="timelineHeading">
+            Chào bạn :>
+        </div>
+    </div>
+    <div class="main--timeline hide" id="main--timeline">
+        <div class="timeline" id="timeline">
+            <div class="timeline__line"></div>
+            <div class="timeline__events">
+                <div class="timeline__events__time" id="birthDate">DD/MM/YYYY</div>
+                <div class="timeline__events__decs">
+                    Chính ngày này là ngày bạn bước vào thế giới này.
+                </div>
+            </div>
+            <div class="timeline__events">
+                <div class="timeline__events__time" id="meetDate">DD/MM/YYYY</div>
+                <div class="timeline__events__decs">
+                    Sau <span id="yearTillMeet">xx</span> năm, chúng ta gặp nhau lần đầu tiên.
+                </div>
+            </div>
+            <div class="timeline__events" id="differentEvent">
+                <div class="timeline__events__time" id="differentEventDate">DD/MM/YYYY</div>
+                <div class="timeline__events__decs" id="differentEventDecs">
+                    Uhhhhh blah blah
+                </div>
+            </div>
+            <div class="timeline__events">
+                <div class="timeline__events__time" id="currentDate">DD/MM/YYYY</div>
+                <div class="timeline__events__decs">
+                    Hiện tại, tụi mình đã là bạn bè được <span id="friendTime">x</span> rồi đó!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headerWrapper hide" id="postTimelineHeadingWrapper">
+        <div class="postTimelineHeading heading" style="display: block;" id="postTimelineHeading">
+            Nhưng sau này tụi mình có còn là bạn không nhỉ?
+        </div>
+    </div>
+    <div class="cloud--big hide" id="cardCloud">
+        <div class="cloud--big__ball1 cloud--big__ball"></div>
+        <div class="cloud--big__ball2 cloud--big__ball"></div>
+        <div class="cloud--big__ball3 cloud--big__ball"></div>
+        <div class="cloud--big__ball4 cloud--big__ball"></div>
+        <div class="cloud--big__ball5 cloud--big__ball"></div>
+        <div class="cloud--big__ball6 cloud--big__ball"></div>
+        <div class="cloud--big__ball7 cloud--big__ball"></div>
+        <div class="cloud--big__ball8 cloud--big__ball"></div>
+        <div class="cloud--big__ball9 cloud--big__ball"></div>
+        <div class="cloud--big__ball10 cloud--big__ball"></div>
+    </div>
+    <div class="cardWrapper hide" id="cardWrapper">
+        <div class="cardBox">
+            <div class="card" id="card">
+                <div id="newCircle"></div>
+                <img class="avatar" id="avatar" src="/Images/TKien2.png" alt="avatar">
+                <div id="title" style="text-align: center; opacity: 0;">Gửi <span id="userName"></span></div>
+                <div id="message">I could never find the right way to tell you. Have you noticed I've been gone?. 'Cause I left behind the home that you made me. But I will carry it along. Mm, it's a long way forward, so trust in me. I'll give them shelter, like you've done for me. And I know I'm not alone, you'll be watching over us. Until you're gone.</div>
+            </div>
+            <div class="navArrow hide" id="navArrow" style="opacity: 1;">
+                <div class="previousMessage" id="previousMessage">
+                    <span class="material-symbols-rounded leftArrow arrow">
+                        arrow_back_ios
+                    </span>
+                </div>
+                <div class="nextMessage" id="nextMessage">
+                    <span class="material-symbols-rounded rightArrow arrow">
+                        arrow_forward_ios
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="author">
+        <div class="avatar--small">
+            <img src="/Images/TKien2.png" class="avt--small" alt="tác giả">
+        </div>
+        <div class="authorDecs">
+            <div class="authorText">Tác giả:</div>
+            <div class="authorName">TKien2</div>
+        </div>
+    </div>
+</body>
+<script type="module" src="JS/script.js"></script>
+<script type="module" src="JS/userData.js"></script>
+<script type="module" src="JS/password.js"></script>
+<script type="module" src="JS/setup.js"></script>
+<script type="module" src="JS/basicFunction.js"></script>
+<script type="module" src="JS/animation.js"></script>
+<script type="module" src="JS/card.js"></script>
+<script type="module" src="JS/process.js"></script>
+</html>

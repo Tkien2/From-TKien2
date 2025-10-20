@@ -1,0 +1,27 @@
+.FadeOut{
+    animation-name: FadeOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes FadeOut{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.FadeIn{
+    animation-name: FadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes FadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.Shrink{
+    animation-name: Shrink;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes Shrink{
+    from{}
+    to{scale: 0; opacity: 0;}
+}
