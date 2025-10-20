@@ -12,6 +12,7 @@ body{
 }
 html, body{
     overflow-x: hidden !important;
+    position: relative;
 }
 button{
     cursor: pointer;
@@ -375,7 +376,7 @@ img{
 }
 /* ===Mobile=== */
 @media screen and (max-width: 400px) {
-    body{
+    html, body{
         overflow-x: hidden !important;
     }
     .heading{
