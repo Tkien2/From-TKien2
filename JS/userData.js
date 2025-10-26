@@ -1,5 +1,5 @@
 // Đừng đọc mà, chưa mã hoá...
-const PS = "(P.S: web tui chỉ làm trong 3 ngày nên không được đẹp lắm, có thể có lỗi này nọ. Thông cảm, tại kin nhớ trễ quá...)"
+const PS = "(P.S: web tui chỉ làm trong 3 ngày nên không được đẹp lắm, có thể có lỗi này nọ. Thông cảm, tại Kin nhớ trễ quá...)"
 export const userList =[
     {
         name: "Tâm Lê",
