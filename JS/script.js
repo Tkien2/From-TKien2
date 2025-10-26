@@ -11,12 +11,14 @@ const cardCloud = document.getElementById("cardCloud")
 const cardWrapper = document.getElementById("cardWrapper")
 let userIndex = null
 let userMessages = null
+let isUserConfirmed = false
 // CheckPassword
 process.checkPasswordButton.addEventListener("click", async ()=>{
     let index = await process.checkPassword()
     if(index !== null){
         userIndex = index
         userMessages = userData.userList[userIndex].messages
+        isUserConfirmed = true
     }
 })
 function removeHideClass(listOfElements = []){
@@ -147,7 +149,7 @@ async function fadeInCurrentElement(currentElement){
     elementFadeInWhenReach[elementFadeInIndex].isAppeared = true
 }
 document.addEventListener("scroll", ()=>{
-    if(elementFadeInIndex < elementFadeInWhenReach.length){
+    if(elementFadeInIndex < elementFadeInWhenReach.length && isUserConfirmed){
         // không dùng for để tránh check element không cần thiết
         if(elementFadeInWhenReach[elementFadeInIndex].isAppeared === false){
             const currentElement = elementFadeInWhenReach[elementFadeInIndex].element

@@ -374,6 +374,20 @@ img{
     padding-bottom: 10px;
     display: none;
 }
+.github{
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    opacity: 0.5;
+}
+.githubIcon{
+    font-size: 30px;
+}
+a, a:visited{
+    color: white !important;
+    text-decoration: none;
+    fill: white !important;
+}
 /* ===Mobile=== */
 @media screen and (max-width: 400px) {
     html, body{
