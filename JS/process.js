@@ -20,6 +20,11 @@ function showTimeline(){
     timelineHeading.classList.remove("hide")
 }
 async function setData(user){
+    if(user.pass == "MTQ3OTM="){
+        const currentDayMessage = document.getElementById("currentDateMessage")
+        currentDayMessage.innerHTML = 'Hiện tại, tụi mình đã là bạn bè được <span id="friendTime">x</span>... phải không nhỉ? Bà có còn coi tui là bạn của bà không...?'
+        //tOxIC DrOWn crImE heart GriEF dIrEk DeaLt?
+    }
     const yearOfBirth = basicFunction.getYearFromUnixTimeStamp(user.birthdayUnixInSec)
     const monthOfBirth = basicFunction.getMonthFromUnixTimeStamp(user.birthdayUnixInSec)
     const dayOfBirth = basicFunction.getDayFromUnixTimeStamp(user.birthdayUnixInSec)
