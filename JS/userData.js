@@ -8,6 +8,7 @@ export const userList =[
         timeFirstMet: 1724810400,
         specTime: 1736442000,
         specDecs: "Lần đầu tiên tụi mình chơi game chung.",
+        endTime: 1770267147, //worST gRief droWN kNife scoRN wREcK ChokE bLEaK wOuND chAsm MalEf wrECK mAlef cHOke drOWn CoRps Drugs gLOoM gLOom chASm? Idk...
         messages: [
             "Ờm nói sao nhỉ. Nói thật là ban đầu tui không biết phải làm gì vào ngày này hết, Ý tưởng làm web này thì Kin mới nghĩ ra tầm hôm thứ 7... Kin biết món quà nhỏ xíu này bà không thể cầm được, bà không ăn được nhưng mà ít nhất thì nó vẫn tồn tại cả chục năm sau này :>",
             "20 tháng 10 rồi nhể... tui mong bà đã có một ngày thật vui vẻ, không chỉ hôm nay, mà còn ngày mai, ngày mốt và cả sau này nữa! Còn bây giờ, tui chúc bà học giỏi, đạt điểm cao để sau này có thể theo đuổi ước mơ của riêng mình, chứ đừng như tui, giờ vẫn chưa biết sau này mình theo ngành nào haha...<br>Tui biết là bà đọc xong thì kiểu gì cũng sẽ thấy câu văn của tui không được hay, không được mượt, nhưng mà chịu thôi, đó là những gì tui thực sự nghĩ mà. Nghĩ gì nói đó chứ nói vòng vo làm gì ha.<br><br>Dù sao thì chúc bà có một tuần vui vẻ!<br><br> -Tkien2",
