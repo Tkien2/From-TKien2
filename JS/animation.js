@@ -25,7 +25,7 @@ export async function playFadeIn(element, blockOrFlex, durationInSec, delayInSec
     setTimeout(()=>{
         element.style.opacity = 1
         return
-    }, durationInSec*1000)
+    }, delayInSec*1000)
 }
 export async function playFadeOut(element, durationInSec, delayInSec, displayNoneAfterAnimation = true){
     if(displayNoneAfterAnimation){

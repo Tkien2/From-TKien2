@@ -1,13 +1,12 @@
 # Cập nhật
-### 26/10/2025
+### 10/3/2026
 
 **Đã fix**
-- Fix bug chạy nội dung khi chưa nhập mật khẩu
-- Sửa chính tả
-- Thêm liên kết github
+- Animation kém trơn tru (Fade In)
 
 **Sự cố đã biết**
 - Console một đống lỗi khi hiện bức thư
+- Thư trả về undefined ở trang đầu tiên khi dùng mũi tên trở về trang trước
 # Giới thiệu
 Web này là quà tặng nho nhỏ cho 4 người bạn của tui vào ngày 20/10, code thì sơ sài nên... kệ đi ha.
 # Quá trình
