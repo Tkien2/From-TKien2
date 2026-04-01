@@ -92,3 +92,18 @@ export async function checkPassword(){
         return null
     }
 }
+let isPasswordShowed = false
+const showPasswordElement = document.getElementById("showPassword")
+const showPasswordLineElement = document.getElementById("showPasswordLine")
+showPasswordElement.addEventListener("click", ()=>{
+    const password = document.getElementById("password")
+    isPasswordShowed = !isPasswordShowed
+    if(isPasswordShowed){
+        showPasswordLineElement.style.width = "0%"
+        password.type = "text"
+    }
+    else{
+        showPasswordLineElement.style.width = "100%"
+        password.type = "password"
+    }
+})
