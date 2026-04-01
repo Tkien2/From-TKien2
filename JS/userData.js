@@ -12,7 +12,7 @@ export const userList =[
         messages: [
             "Ờm nói sao nhỉ. Nói thật là ban đầu tui không biết phải làm gì vào ngày này hết, Ý tưởng làm web này thì Kin mới nghĩ ra tầm hôm thứ 7... Kin biết món quà nhỏ xíu này bà không thể cầm được, bà không ăn được nhưng mà ít nhất thì nó vẫn tồn tại cả chục năm sau này :>",
             "20 tháng 10 rồi nhể... tui mong bà đã có một ngày thật vui vẻ, không chỉ hôm nay, mà còn ngày mai, ngày mốt và cả sau này nữa! Còn bây giờ, tui chúc bà học giỏi, đạt điểm cao để sau này có thể theo đuổi ước mơ của riêng mình, chứ đừng như tui, giờ vẫn chưa biết sau này mình theo ngành nào haha...<br>Tui biết là bà đọc xong thì kiểu gì cũng sẽ thấy câu văn của tui không được hay, không được mượt, nhưng mà chịu thôi, đó là những gì tui thực sự nghĩ mà. Nghĩ gì nói đó chứ nói vòng vo làm gì ha.<br><br>Dù sao thì chúc bà có một tuần vui vẻ!<br><br> -Tkien2",
-            PS
+            PS,
         ],
     },
     {
@@ -38,7 +38,8 @@ export const userList =[
         messages: [
             "Hello bà, Kin đây. Chắc bà cũng không bất ngờ lắm đâu ha, vì đây đâu phải là lần đầu tiên tui làm web kiểu này đâu.",
             "Có thể sau này tụi mình không còn gặp nhau nữa, tương lai mà, làm gì có ai đoán được nhể? Cũng vì thời gian có hạn nên khoảng thời gian đơn giản này quý lắm.<br>Nhân ngày 20/10 và nhân lúc bà còn học chung với tui, tui chúc bà có một tuần thật vui vẻ, không chỉ riêng gì tuần này mà còn cả khoảng thời gian sau này nữa. Tui không biết sau này bà sẽ ra sao, như thế nào nhưng chỉ cần là luôn vui vẻ là được rồi. Quan trọng hơn cả là bây giờ thì Kin chúc Hân học tốt hơn năm ngoái, đạt điểm cao đúng như kỳ vọng của mình. Có bao nhiêu điều Kin muốn nói thì Kin cũng đã nói rồi đó :><br><br>Chúc Hân có một tuần thật vui vẻ!<br><br> -TKien2",
-            PS
+            PS,
+            "<b>1/4/2026</b><br>Oh shit, tui cũng không ngờ rằng tui với bà có thể trở thành bạn thân luôn á. Mà tụi mình thân từ khi nào nhi? Tui cũng không nhớ nữa, dù gì thì cũng không quan trọng. Mong rằng tụi mình sẽ giữ được tình bạn này dài dài nhé :>"
         ],
     },
     {

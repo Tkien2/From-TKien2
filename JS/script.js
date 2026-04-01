@@ -192,14 +192,12 @@ function hideNavArrow(){
     if(userMessageIndex==0){
         prevMessage.style.scale = 0
         nextMessage.style.scale = 1
-    } else{
-        prevMessage.style.scale = 1
-    }
-    if(userMessageIndex == userMessages.length - 1){
+    } else if(userMessageIndex == userMessages.length - 1){
         nextMessage.style.scale = 0
         prevMessage.style.scale = 1
     } else{
         nextMessage.style.scale = 1
+        prevMessage.style.scale = 1
     }
 }
 prevMessage.addEventListener("click", ()=>{
