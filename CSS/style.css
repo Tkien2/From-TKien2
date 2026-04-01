@@ -4,6 +4,9 @@
     --green: rgb(112, 247, 141);
     --blue: rgb(112, 182, 247);
 }
+body *{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
 body{
     margin: 0;
     min-height: 100vh;
@@ -20,30 +23,6 @@ html, body{
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
-}
-#showPassword{
-    position: absolute;
-    right: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    filter: drop-shadow(white 0 0 1px);
-}
-#showPassword > i{
-    content: "";
-    position: absolute;
-    background-color: white;
-    box-shadow: white 0 0 1px;
-    height: 1.7px;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    transition-duration: 0.15s;
-    transition-timing-function: ease-out;
-}
-#password{
-    width: 100%;
-    max-width: 100%;
 }
 button{
     cursor: pointer;
@@ -191,6 +170,30 @@ body::-webkit-scrollbar{
     font-size: 35px !important;
     margin: 0;
     user-select: none;
+}
+#showPassword{
+    position: absolute;
+    right: 20px;
+    font-size: 18px !important;
+    cursor: pointer;
+    filter: drop-shadow(white 0 0 1px);
+}
+#showPassword > i{
+    content: "";
+    position: absolute;
+    background-color: white;
+    box-shadow: white 0 0 1px;
+    height: 1.7px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+#password{
+    width: 100%;
+    max-width: 100%;
 }
 .notification{
     position: fixed;
