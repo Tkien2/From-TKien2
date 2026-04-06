@@ -187,13 +187,13 @@ function showSpecMessageForH(){
             const isTripleZero = timeDifference[0] === 0 && timeDifference[1] === 0 && timeDifference[2] === 0;
             if(!isTripleZero){
                 if(timeDifference[0] != 0){
-                    text += `${timeDifference[0]} năm`
+                    text += `${timeDifference[0]} năm `
                 }
                 if(timeDifference[1] != 0){
-                    text += ` ${timeDifference[1]} tháng`
+                    text += `${timeDifference[1]} tháng `
                 }
                 if(timeDifference[2] != 0){
-                    text += ` và ${timeDifference[2]} ngày</b>`
+                    text += `${timeDifference[2]} ngày</b>`
                 }
             } else{
                 const timeDifferenceInSeconds = specMessageTime - currentTime
