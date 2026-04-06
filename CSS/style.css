@@ -423,6 +423,9 @@ a, a:visited{
     text-decoration: none;
     fill: white !important;
 }
+#message{
+    cursor: auto;
+}
 /* ===Mobile=== */
 @media screen and (max-width: 400px) {
     html, body{
@@ -457,7 +460,7 @@ a, a:visited{
         padding: 8px 15px;
     }
     .icon{
-        font-size: 25px !important;
+        font-size: 15px;
     }
     .notification{
         padding: 10px 15px;

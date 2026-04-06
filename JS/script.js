@@ -176,16 +176,77 @@ document.addEventListener("scroll", ()=>{
 // Message
 const prevMessage = document.getElementById("previousMessage")
 const nextMessage = document.getElementById("nextMessage")
+// For you... my bestest friend
+function showSpecMessageForH(){
+    if(userIndex == 2 && userMessageIndex == 4){
+        const currentTime = (Date.now())/1000
+        const specMessageTime = userData.userList[userIndex].specMessageTime
+        if(currentTime - specMessageTime < 0){
+            const timeDifference = basicFunction.getTimeFrom2Dates(currentTime, specMessageTime)
+            let text = `Sau này sẽ có tin nhắn đặt biệt từ Kin, ráng đợi nha... còn <b>`
+            const isTripleZero = timeDifference[0] === 0 && timeDifference[1] === 0 && timeDifference[2] === 0;
+            if(!isTripleZero){
+                if(timeDifference[0] != 0){
+                    text += `${timeDifference[0]} năm`
+                }
+                if(timeDifference[1] != 0){
+                    text += ` ${timeDifference[1]} tháng`
+                }
+                if(timeDifference[2] != 0){
+                    text += ` và ${timeDifference[2]} ngày</b>`
+                }
+            } else{
+                const timeDifferenceInSeconds = specMessageTime - currentTime
+                const hours = Math.floor(timeDifferenceInSeconds/3600)
+                const minutes = Math.floor((timeDifferenceInSeconds - hours*3600)/60)
+                const seconds = Math.round(timeDifferenceInSeconds - minutes*60)
+                if(hours != 0){
+                    text += `${hours} giờ`
+                }
+                if(minutes != 0){
+                    text += ` ${minutes} phút`
+                }
+                if(seconds != 0){
+                    text += ` và ${seconds} giây</b>`
+                }
+            }
+            document.getElementById("message").innerHTML = text
+            requestAnimationFrame(showSpecMessageForH)
+            return text
+        } else{
+            console.log("TimeSpec:", specMessageTime,"\n","Current:", currentTime)
+            // copy chat skibidi
+            const d = new TextDecoder().decode(
+                Uint8Array.from(atob(userMessages[userMessageIndex]), c => c.charCodeAt(0))
+            );
+            card.showNewCardMessage(d);
+            return atob(userMessages[userMessageIndex])
+        }
+    }
+}
 function showNextMessage(){
     if(userMessageIndex < userMessages.length){
         userMessageIndex++
-        card.showNewCardMessage(userMessages[userMessageIndex])
+        console.log(userMessageIndex)
+        console.log(userIndex != 2)
+        console.log(userMessageIndex !=4)
+        if(userIndex != 2 || userMessageIndex !=4){
+            card.showNewCardMessage(userMessages[userMessageIndex])
+        } 
+        else{
+            showSpecMessageForH()
+        }
     }
 }
 function showPrevMessage(){
     if(userMessageIndex >= 0){
         userMessageIndex--
-        card.showNewCardMessage(userMessages[userMessageIndex])
+        if(userIndex != 2 || userMessageIndex !=4){
+            card.showNewCardMessage(userMessages[userMessageIndex])
+        }
+        else{
+            showSpecMessageForH()
+        }
     }
 }
 function hideNavArrow(){

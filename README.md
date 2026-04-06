@@ -2,11 +2,7 @@
 ### 1/4/2026
 
 **Tính năng mới**
-- Thêm ẩn/hiện mật khẩu
-
-**Đã fix**
-- bỏ highlight xanh dương trên trình duyệt thiết bị mobile
-
+- Không
 **Sự cố đã biết**
 - Console báo lỗi khi hiện bức thư
 # Giới thiệu
