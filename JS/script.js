@@ -201,13 +201,13 @@ function showSpecMessageForH(){
                 const minutes = Math.floor((timeDifferenceInSeconds - hours*3600)/60)
                 const seconds = Math.round(timeDifferenceInSeconds - minutes*60)
                 if(hours != 0){
-                    text += `${hours} giờ`
+                    text += `${hours} giờ `
                 }
                 if(minutes != 0){
-                    text += ` ${minutes} phút`
+                    text += `${minutes} phút `
                 }
                 if(seconds != 0){
-                    text += ` và ${seconds} giây</b>`
+                    text += `${seconds} giây</b>`
                 }
             }
             document.getElementById("message").innerHTML = text
