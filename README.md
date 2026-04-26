@@ -1,8 +1,9 @@
 # Cập nhật
-### 1/4/2026
+### 27/4/2026
 
 **Tính năng mới**
 - Không
+
 **Sự cố đã biết**
 - Console báo lỗi khi hiện bức thư
 # Giới thiệu
@@ -53,3 +54,7 @@ document.addEventListener("scroll", ()=>{
 Khi bà mấy bà đọc được cái này thì cả 2 bug này được fix hết rồi nha!
 # Lời kết
 Phải nói là đây là dự án mà cá nhân Kin cảm thấy đẹp nhất rồi, chỉ trong 3 ngày mà Kin làm được như này là tốt lắm rồi. Giờ Kin chỉ đang tự hỏi xem web này tồn tại được bao lâu, hehe...
+
+
+# Note
+Có thể bạn đã để ý, web vẫn còn được cập nhật. Nhưng yên tâm, Kin sẽ đảm bảo những bản cập nhật sau này không làm mất đi dáng vẻ ban đầu của web!
