@@ -74,7 +74,7 @@ async function setData(user){
  */
 export async function checkPassword(){
     const password = document.getElementById("password").value
-    const hashedPassword = passwordFunc.encryptPassword2(password)
+    const hashedPassword = await passwordFunc.encryptPassword2(password)
     const userIndex = getUserIndex(hashedPassword)
     const passwordArea = document.getElementById("passwordArea")
     if(userIndex != null){

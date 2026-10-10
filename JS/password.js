@@ -1,20 +1,10 @@
-// Hash password skibidi tối thượng siêu cấp sigma =))))
-function encryptPassword(password){
-    let encryptedPassword = 39
-    let salt = "YouMadeMyYears"
-    let encryptedSalt = 1037
-    const sugar = 39
-    for (let i = 0; i<password.length; i++){
-        encryptedPassword += (encryptedPassword^(password.charCodeAt(i)^sugar))^encryptedPassword
-        encryptedPassword ^= sugar
-    }
-    for (let i = 0; i<salt.length; i++){
-        encryptedSalt += encryptedPassword^((salt.charCodeAt(i)^sugar)^sugar)
-        encryptedSalt ^= sugar
-    }
-    let encryptedPassword2 = (encryptedPassword^sugar)^(encryptedSalt^sugar)
-    return btoa(encryptedPassword2)
-}
-export function encryptPassword2(password){
-    return encryptPassword(btoa(encryptPassword(password)))
+export async function encryptPassword2(str) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(str);
+  const hashBuffer = await crypto.subtle.digest('SHA-512', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  console.log(data)
+  console.log(hashBuffer)
+  console.log(hashArray)
+  return hashArray.map(b => b.toString(32).padStart(2, '0')).join('');
 }
